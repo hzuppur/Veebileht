@@ -16,3 +16,17 @@ function showPanel(panelIndex, colorCode) {
 }
 
 showPanel(0, '#f44336');
+
+// ANCHOR SCROLL
+document.addEventListener("DOMContentLoaded", function() {
+  var supportScrollIntoView = 'scrollBehavior' in document.documentElement.style;
+  var tabContent = document.getElementById("tabContent");
+  var tabScroll = document.getElementById("tabScroll");
+
+  tabScroll.onclick = function () {
+    if (supportScrollIntoView) {
+      event.preventDefault();
+      tabContent.scrollIntoView({behavior: "smooth", block: "start"});
+    }
+  };
+});

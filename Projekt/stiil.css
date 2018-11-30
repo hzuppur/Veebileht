@@ -129,6 +129,8 @@ body {
 .sisu {
   margin: 50px 30px 10vw;
   color: #161f28;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .sisu h1 {
@@ -140,4 +142,6 @@ body {
   font-size: 20px;
   color: rgba(0, 0, 0, .8);
   line-height: 1.4;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
